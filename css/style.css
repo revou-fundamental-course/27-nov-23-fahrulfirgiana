@@ -13,7 +13,7 @@ main{
 
 .container-wide{
   width: 500px;
-  height: 575px;
+  height: 550px;
   background-color: #25316D;
   box-shadow: 2px 2px 10px black;
   border-radius: 25px;
@@ -29,7 +29,7 @@ main{
 
 .surround-container{
   width: 750px;
-  height: 575px;
+  height: 550px;
   background-color: #25316D;
   box-shadow: 2px 2px 10px black;
   border-radius: 25px;
