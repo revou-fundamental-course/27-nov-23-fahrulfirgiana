@@ -1,0 +1,134 @@
+body{
+  background-color: rgb(218, 218, 218);
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.container-wide{
+  width: 500px;
+  height: 575px;
+  background-color: #25316D;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 25px;
+  padding-bottom: 20px;
+}
+
+.container-wide> h3{
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.surround-container{
+  width: 750px;
+  height: 575px;
+  background-color: #25316D;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 25px;
+  padding-bottom: 20px;
+}
+
+.surround-container> ul{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 60px;
+}
+
+li{
+  list-style-type: none;
+  background-color: #071952;
+  box-shadow: 1px 1px 5px black;
+  padding: 15px 20px;
+  border-radius: 13px;
+  margin-bottom: 30px;
+}
+li a{
+  text-decoration: none;
+  color: white;
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container>img {
+  max-width: 200px;
+  height: auto;
+} 
+
+.rumus{
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.input-value {
+  display: flex;
+  flex-direction: column; /* Mengatur tata letak menjadi kolom */
+  margin-bottom: 10px; /* Menambahkan margin bawah agar elemen berikutnya tidak langsung bersebelahan */
+}
+
+.input-value label {
+  width: calc(100% - 115px);
+  margin: auto;
+  margin-bottom: 10px;
+  }
+
+.input-value input {
+  width: calc(100% - 130px);
+  margin: auto; 
+  border-radius: 6px;
+  padding: 8px;
+}
+
+
+.aksi{
+  width: calc(100% - 115px);
+  margin: auto;
+  margin-top: 15px;
+}
+
+.aksi button{
+padding: 8px 20px;
+border-radius: 6px;
+}
+
+.oi{
+  margin: 10px 18%;
+}
+
+.result-container {
+  margin: 10px 12%;
+  color: white;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar yang lebih kecil */
+  }
+
+  .surround-container,
+  .container-wide {
+    width: 100%; /* Mengisi lebar layar pada layar yang lebih kecil */
+    margin-bottom: 20px; /* Memberikan jarak antara kedua container */
+  }
+
+  .input-value input {
+    max-width: 100%; /* Hapus batasan lebar maksimum pada layar yang lebih kecil */
+  }
+
+  .surround-container {
+    width: 90%;
+    max-width: none; /* Hapus lebar maksimum pada layar yang lebih kecil */
+  }
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    
+    <div class="surround-container">
+      <ul>
+        <li>
+          <a href="index.html"> Luas Segitiga</a>
+        </li>
+        <li>
+          <a href="keliling.html">Keliling Segitiga</a>
+        </li>
+      </ul>
+      <div class="img-container">
+        <img src="assets/segitiga.jpg" alt="segitiga">
+      </div>
+      <p style="margin-left: 40px;margin-top: 50px;">Rumus Luas Segitiga yaitu :</p>
+      <p class="rumus">L = 1/2 x a x t</p>
+      <p style="margin-left: 40px;margin-top: 20px; margin-bottom: 60px;">
+        Di mana :
+        <br>
+        L = Luas
+        <br>
+        a = Panjang Alas
+        <br>
+        t = Tinggi
+      </p>
+    </div>
+    <div class="container-wide">
+      <h3>Luas Segitiga</h3>
+      <div class="distance">
+        <div class="input-value">
+          <label for="panjangAlas">Panjang Alas</label>
+          <input type="number" name="panjangAlas" placeholder="Masukan Nilai Alas">
+        </div>
+        <div class="input-value">
+          <label for="tinggi">Tinggi</label>
+          <input type="number" name="tinggi" placeholder="Masukan Nilai Tinggi">
+        </div>
+      </div>
+      <div class="aksi">
+        <button onclick="hitungLuas()">Hitung</button>
+        <button onclick="resetInput()">Reset</button>
+      </div>
+      <div id="result" class="result-container"></div>
+    </div>
+    </div>
+  </main>
+  <script src="js/ini.js"></script>
+</body>
+</html>

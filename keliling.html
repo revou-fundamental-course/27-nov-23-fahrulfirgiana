@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    
+    <div class="surround-container">
+      <ul>
+        <li>
+          <a href="index.html"> Luas Segitiga</a>
+        </li>
+        <li>
+          <a href="keliling.html">Keliling Segitiga</a>
+        </li>
+      </ul>
+      <div class="img-container">
+        <img src="assets/segitiga.jpg" alt="segitiga">
+      </div>
+      <p style="margin-left: 40px;margin-top: 50px;">Rumus Keliling Segitiga yaitu :</p>
+      <p class="rumus">K = S1 + S2 + S3</p>
+      <p style="margin-left: 40px;margin-top: 20px; margin-bottom: 60px;">
+        Di mana :
+        <br>
+        K = Keliling
+        <br>
+        S1 = Sisi A
+        <br>
+        S2 = Sisi B
+        <br>
+        S3 = Sisi C
+      </p>
+    </div>
+    <div class="container-wide">
+      <h3>Keliling Segitiga</h3>
+      <div class="distance">
+        <div class="input-value">
+          <label for="nilaiSisiA">Nilai Sisi A</label>
+          <input type="number" name="nilaiSisiA" placeholder="Masukan Nilai Sisi A">
+        </div>
+        <div class="input-value">
+          <label for="nilaiSisiB">Nilai Sisi B</label>
+          <input type="number" name="nilaiSisiB" placeholder="Masukan Nilai Sisi B">
+        </div>
+        <div class="input-value">
+          <label for="nilaiSisiC">Nilai Sisi C</label>
+          <input type="number" name="nilaiSisiC" placeholder="Masukan Nilai Sisi C">
+        </div>
+      </div>
+      <div class="aksi">
+        <button onclick="hitungKeliling()">Hitung</button>
+        <button onclick="resetInputKeliling()">Reset</button>
+      </div>
+      <div id="result" class="result-container"></div>
+    </div>
+  </main>
+  <script src="js/ini.js"></script>
+</body>
+</html>
