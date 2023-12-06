@@ -146,8 +146,5 @@ border-radius: 6px;
     margin-top: 10px;
   }
 
-  .container-wide {
-    width: 100%; /* Mengisi 90% lebar layar pada layar yang lebih kecil */
-  }
 }
 
