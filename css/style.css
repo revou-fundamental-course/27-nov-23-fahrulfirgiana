@@ -122,6 +122,8 @@ border-radius: 6px;
 @media only screen and (max-width: 768px) {
   main {
     flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar yang lebih kecil */
+    padding: 0;
+    align-items: center;
   }
 
   .surround-container,
@@ -137,6 +139,17 @@ border-radius: 6px;
   .surround-container {
     width: 90%;
     max-width: none; /* Hapus lebar maksimum pada layar yang lebih kecil */
+  }
+
+  .surround-container ul{
+    padding-inline-start: 0;
+  }
+  .aksi button {
+    margin-top: 10px;
+  }
+
+  .container-wide {
+    width: 90%; /* Mengisi 90% lebar layar pada layar yang lebih kecil */
   }
 }
 
