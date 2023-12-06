@@ -135,9 +135,6 @@ border-radius: 6px;
     max-width: 100%; /* Hapus batasan lebar maksimum pada layar yang lebih kecil */
   }
 
-  .surround-container {
-    width: 80%;
-  }
 
   .surround-container ul{
     padding-inline-start: 0;
