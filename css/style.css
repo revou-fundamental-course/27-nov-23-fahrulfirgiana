@@ -136,7 +136,7 @@ border-radius: 6px;
   }
 
   .surround-container {
-    width: 140%;
+    max-width: none; /* Hapus lebar maksimum pada layar yang lebih kecil */
   }
 
   .surround-container ul{
