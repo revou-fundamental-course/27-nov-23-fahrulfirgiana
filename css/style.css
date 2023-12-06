@@ -129,7 +129,6 @@ border-radius: 6px;
   .surround-container,
   .container-wide {
     width: 100%; /* Mengisi lebar layar pada layar yang lebih kecil */
-    margin-bottom: 20px; /* Memberikan jarak antara kedua container */
   }
 
   .input-value input {
@@ -137,7 +136,7 @@ border-radius: 6px;
   }
 
   .surround-container {
-    max-width: none; /* Hapus lebar maksimum pada layar yang lebih kecil */
+    width: 90%;
   }
 
   .surround-container ul{
