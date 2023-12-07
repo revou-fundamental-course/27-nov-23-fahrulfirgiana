@@ -1,22 +1,33 @@
 function hitungLuas() {
-  var panjangAlas = parseFloat(document.getElementsByName('panjangAlas')[0].value);
-  var tinggi = parseFloat(document.getElementsByName('tinggi')[0].value);
+  var panjangAlasInput = document.getElementsByName('panjangAlas')[0];
+  var tinggiInput = document.getElementsByName('tinggi')[0];
 
-  if (isNaN(panjangAlas) || isNaN(tinggi)) {
-    document.getElementById('result').innerText = 'Masukkan nilai yang valid untuk panjang alas dan tinggi.';
+  // Cek jika belum ada input
+  if (!panjangAlasInput.value || !tinggiInput.value) {
+    alert('Masukkan nilai panjang alas dan tinggi.');
+    return;
+  }
+
+  var panjangAlas = parseFloat(panjangAlasInput.value);
+  var tinggi = parseFloat(tinggiInput.value);
+
+  // Cek jika input bukan integer
+  if (isNaN(panjangAlas) || isNaN(tinggi) || !Number.parseFloat(panjangAlas) || !Number.parseFloat(tinggi)) {
+    alert('Masukkan nilai yang valid untuk panjang alas dan tinggi.');
   } else {
     var luas = 0.5 * panjangAlas * tinggi;
 
-    // Build the result string with the formula and calculated result
+    // Hasil
     var resultString = 'Hasil : '+'\n';
     resultString += 'L = 1/2 x ' + panjangAlas + ' x ' + tinggi + '\n';
     resultString += 'L = 1/2 x ' + panjangAlas * tinggi + '\n';
     resultString += 'L = ' + luas;
 
-    // Update the result div with the formatted string
+    // menampilkan hasil
     document.getElementById('result').innerText = resultString;
   }
 }
+
 
 function resetInput() {
   document.getElementsByName('panjangAlas')[0].value = '';
@@ -25,30 +36,55 @@ function resetInput() {
 }
 
 function hitungKeliling() {
-  var nilaiSisiA = parseFloat(document.getElementsByName('nilaiSisiA')[0].value);
-  var nilaiSisiB = parseFloat(document.getElementsByName('nilaiSisiB')[0].value);
-  var nilaiSisiC = parseFloat(document.getElementsByName('nilaiSisiC')[0].value);
+  var nilaiSisiAInput = document.getElementsByName('nilaiSisiA')[0];
+  var nilaiSisiBInput = document.getElementsByName('nilaiSisiB')[0];
+  var nilaiSisiCInput = document.getElementsByName('nilaiSisiC')[0];
 
-  if (isNaN(nilaiSisiA) || isNaN(nilaiSisiB || isNaN(nilaiSisiC))) {
-    document.getElementById('result').innerText = 'Masukkan nilai yang valid untuk panjang alas dan tinggi.';
+  // cek jika belum ada input
+  if (!nilaiSisiAInput.value || !nilaiSisiBInput.value || !nilaiSisiCInput.value) {
+    alert('Masukkan nilai sisi A, sisi B, dan sisi C.');
+    return;
+  }
+
+  var nilaiSisiA = parseFloat(nilaiSisiAInput.value);
+  var nilaiSisiB = parseFloat(nilaiSisiBInput.value);
+  var nilaiSisiC = parseFloat(nilaiSisiCInput.value);
+
+  // cek jika format tidak sesuai
+  if (isNaN(nilaiSisiA) || isNaN(nilaiSisiB) || isNaN(nilaiSisiC)) {
+    alert('Masukkan nilai yang valid untuk sisi A, sisi B, dan sisi C.');
   } else {
     var keliling = nilaiSisiA + nilaiSisiB + nilaiSisiC;
 
-    // Build the result string with the formula and calculated result
+    // Hasil
     var resultString = 'Hasil : '+'\n';
     resultString += 'K = ' + nilaiSisiA + ' + ' + nilaiSisiB + ' + ' + nilaiSisiC + '\n';
     resultString += 'K = ' + keliling;
 
-    // Update the result div with the formatted string
-    document.getElementById('result').innerText = resultString;
+    // Menampilkan hasil
+    document.getElementById('resultK').innerText = resultString;
   }
 }
+
 
 function resetInputKeliling() {
   document.getElementsByName('nilaiSisiA')[0].value = '';
   document.getElementsByName('nilaiSisiB')[0].value = '';
   document.getElementsByName('nilaiSisiC')[0].value = '';
-  document.getElementById('result').innerText = '';
+  document.getElementById('resultK').innerText = '';
 }
 
+function showLuasSegitiga() {
+  document.getElementById('luasSegitiga').style.display = 'block';
+  document.getElementById('luasContainer').style.display = 'block';
+  document.getElementById('kelilingSegitiga').style.display = 'none';
+  document.getElementById('kelilingContainer').style.display = 'none';
+}
+
+function showKelilingSegitiga() {
+  document.getElementById('luasSegitiga').style.display = 'none';
+  document.getElementById('luasContainer').style.display = 'none';
+  document.getElementById('kelilingSegitiga').style.display = 'block';
+  document.getElementById('kelilingContainer').style.display = 'block';
+}
 

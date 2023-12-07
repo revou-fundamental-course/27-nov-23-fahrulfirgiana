@@ -114,7 +114,8 @@ border-radius: 6px;
 }
 
 .result-container {
-  margin: 10px 12%;
+  width: calc(100% - 115px);
+  margin: 13px auto;
   color: white;
   font-weight: bold;
 }
