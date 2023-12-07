@@ -80,8 +80,8 @@ li a{
 
 .input-value {
   display: flex;
-  flex-direction: column; /* Mengatur tata letak menjadi kolom */
-  margin-bottom: 10px; /* Menambahkan margin bawah agar elemen berikutnya tidak langsung bersebelahan */
+  flex-direction: column; 
+  margin-bottom: 10px; 
 }
 
 .input-value label {
@@ -122,22 +122,22 @@ border-radius: 6px;
 
 @media only screen and (max-width: 768px) {
   main {
-    flex-direction: column; /* Mengubah tata letak menjadi kolom pada layar yang lebih kecil */
+    flex-direction: column; 
     padding: 0;
     align-items: center;
   }
 
   .surround-container,
   .container-wide {
-    width: 100%; /* Mengisi lebar layar pada layar yang lebih kecil */
+    width: 100%; 
   }
 
   .input-value input {
-    max-width: 100%; /* Hapus batasan lebar maksimum pada layar yang lebih kecil */
+    max-width: 100%; 
   }
 
   .surround-container {
-    max-width: none; /* Hapus lebar maksimum pada layar yang lebih kecil */
+    max-width: none; 
   }
 
   .surround-container ul{
